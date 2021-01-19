@@ -23,6 +23,11 @@ public class BitwiseOperator {
 		System.out.println(true ^ false);
 		System.out.println(false ^ true);
 		System.out.println(false ^ false);
+		
+		
+		System.out.println(4&5); //4
+		System.out.println(4|5); //5
+		System.out.println(4^5); //1
 	}
 
 }
