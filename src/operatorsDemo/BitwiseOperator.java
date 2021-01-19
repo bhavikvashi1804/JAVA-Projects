@@ -18,7 +18,7 @@ public class BitwiseOperator {
 		System.out.println(false | false);
 		
 		
-		System.out.println("Bitwise Operator: XOR ^: anyone must be different");
+		System.out.println("Bitwise Operator: XOR ^: both must be different");
 		System.out.println(true ^ true);
 		System.out.println(true ^ false);
 		System.out.println(false ^ true);
