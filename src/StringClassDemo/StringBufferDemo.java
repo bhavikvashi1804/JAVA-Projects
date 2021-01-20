@@ -25,5 +25,5 @@ public class StringBufferDemo {
 		
 		System.out.println(sb1.delete(10, 13));
 		//All the power is with in you.You can do anything and everything.
-	}
+	} 
 }
