@@ -13,6 +13,8 @@ public class LabelledBlocksAndBreak {
 				break l1;
 			}
 		}
+		
+		System.out.println("Outside the block");
 	}
 
 }
