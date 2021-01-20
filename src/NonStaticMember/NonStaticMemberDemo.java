@@ -10,11 +10,17 @@ public class NonStaticMemberDemo {
 		
 		System.out.println("Inside main method");
 		
+		
+		//default constructor
 		Student s1 = new Student();
+		//call the non-static method
 		s1.display();
 		
 		
 		Student s2 = new Student("Bhavik",23);
+		s2.display();
+		//access the non-static variable
+		s2.name ="Raj";
 		s2.display();
 		
 	}
