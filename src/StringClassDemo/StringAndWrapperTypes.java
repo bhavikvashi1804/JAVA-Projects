@@ -11,6 +11,7 @@ public class StringAndWrapperTypes {
 		String s = "123";
 		Integer i= new Integer(456);
 		System.out.println(s);
+		//for string class it prints the value inside the string in sop
 		System.out.println(i);
 		
 		
