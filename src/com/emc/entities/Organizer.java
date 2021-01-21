@@ -1,6 +1,13 @@
 package com.emc.entities;
 
-public class Organizer {
-    public long id;
-    public String name;
+public class Organizer extends  EMBase{
+
+    public  Organizer(){
+
+    }
+
+    public  Organizer(long id,String name){
+        super(id,name);
+    }
+
 }

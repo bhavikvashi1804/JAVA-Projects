@@ -1,8 +1,7 @@
 package com.emc.entities;
 
-public class Event {
-    public long id;
-    public String name;
+public class Event extends EMBase{
+
     public String description;
     public String startTime;
     public String endTime;
@@ -13,8 +12,7 @@ public class Event {
     }
 
     public Event(long id,String name,String description){
-        this.id = id;
-        this.name = name;
+        super(id,name);
         this.description = description;
 
     }
