@@ -28,4 +28,6 @@ public class MultipleInheritanceDemo {
         animal.eat();
         animal.travel();
     }
+
+    //this is comment
 }
