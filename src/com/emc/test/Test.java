@@ -2,6 +2,8 @@ package com.emc.test;
 
 import com.emc.entities.Event;
 import com.emc.entities.Organizer;
+import com.emc.managers.EventManager;
+import com.emc.managers.EventManagerImpl;
 
 public class Test {
 
@@ -21,6 +23,12 @@ public class Test {
         System.out.println(event.getId());
         System.out.println(event.getName());
         System.out.println(event.getDescription());
+
+
+        EventManager em = new EventManagerImpl();
+        Event event1 = em.create(456);
+        System.out.println(event1);
+        System.out.println(event1.getId());
 
     }
 }
