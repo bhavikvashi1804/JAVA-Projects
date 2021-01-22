@@ -4,6 +4,7 @@ import com.emc.entities.Event;
 import com.emc.entities.Organizer;
 import com.emc.managers.EventManager;
 import com.emc.managers.EventManagerImpl;
+import com.emc.managers.EventManagerImpl2;
 
 public class Test {
 
@@ -29,6 +30,14 @@ public class Test {
         Event event1 = em.create(456);
         System.out.println(event1);
         System.out.println(event1.getId());
+
+        EventManager em1 = new EventManagerImpl2();
+        Event event2 = em1.create(789);
+        System.out.println(event2);
+        System.out.println(event2.getId());
+        System.out.println(event2.getName());
+        System.out.println(event2.getDescription());
+
 
     }
 }
