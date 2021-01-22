@@ -2,8 +2,8 @@ package com.emc.entities;
 
 public class EMBase {
 
-    private long id;
-    private String name;
+    protected long id;
+    protected String name;
 
     public void setId(long id) {
         this.id = id;
