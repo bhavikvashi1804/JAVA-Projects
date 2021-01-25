@@ -16,5 +16,17 @@ public class SortedList {
         System.out.println(list);
         Collections.sort(list);
         System.out.println(list);
+
+
+        //use your own comparator
+        List<String> list1= new ArrayList<>();
+        list1.add("Bhavik");
+        list1.add("Raj");
+        list1.add("Bholu");
+        list1.add("Jay");
+
+        System.out.println(list1);
+        Collections.sort(list1,new MyComparator());
+        System.out.println(list1);
     }
 }
