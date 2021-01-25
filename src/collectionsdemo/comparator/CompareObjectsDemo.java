@@ -43,11 +43,9 @@ class Student implements Comparable<Student>{
             return  -1;
         }
         else if(s1.age >s2.age){
-            return  -1;
+            return  1;
         }
-        else if(!s1.name.equals(s2.name)){
-            return  -1;
-        }
+
         else {
             return 0;
         }
