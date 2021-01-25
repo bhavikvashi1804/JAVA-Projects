@@ -23,5 +23,22 @@ public class TreeSetDemo {
         System.out.println(set);
         System.out.println(set1);
         System.out.println(set2);
+
+
+        TreeSet<String> treeSet = new TreeSet<String>();
+        treeSet.add("xyz");
+        treeSet.add("abc");
+        treeSet.add("pqr");
+        treeSet.add("efg");
+
+        System.out.println(treeSet);
+
+        TreeSet<StringBuffer> treeSet1 = new TreeSet<StringBuffer>();
+        treeSet1.add(new StringBuffer("xyz"));
+        treeSet1.add(new StringBuffer("abc"));
+        treeSet1.add(new StringBuffer("pqr"));
+        treeSet1.add(new StringBuffer("efg"));
+
+        System.out.println(treeSet1);
     }
 }
