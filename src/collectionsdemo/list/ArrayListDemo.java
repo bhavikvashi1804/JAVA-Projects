@@ -56,5 +56,16 @@ public class ArrayListDemo {
             System.out.println(list.get(i));
         }
 
+        System.out.println("List is: "+ list);
+        //using index
+        list.remove(2);
+        System.out.println("List after remove: "+ list);
+        System.out.println("List is: "+ list);
+        //using element
+        list.remove(new Integer(100));
+        System.out.println("List after remove: "+ list);
+
+
+
     }
 }
