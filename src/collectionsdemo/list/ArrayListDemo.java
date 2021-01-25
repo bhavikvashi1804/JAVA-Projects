@@ -51,5 +51,10 @@ public class ArrayListDemo {
             System.out.println("List contains 100");
         }
 
+
+        for (int i=0;i<list.size();i++){
+            System.out.println(list.get(i));
+        }
+
     }
 }
