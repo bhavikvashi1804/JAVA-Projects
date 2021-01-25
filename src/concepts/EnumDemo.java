@@ -25,5 +25,20 @@ enum Database {
     MYSQL,
     ORACLE,
     SQLSERVER;
+}
 
+enum PaymentType{
+    DEBITCARD(5),
+    CREDITCARD(10),
+    CASH(1);
+
+    int fee;
+
+    PaymentType(int fee){
+        this.fee = fee;
+    }
+
+    public int getFee(){
+        return this.fee;
+    }
 }
