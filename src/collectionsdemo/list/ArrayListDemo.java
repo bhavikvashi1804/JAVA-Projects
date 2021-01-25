@@ -34,9 +34,22 @@ public class ArrayListDemo {
         list.set(1,17);
         System.out.println("List after the replace: "+ list);
 
+        List<Integer> list1 = new ArrayList<Integer>();
+        list1.add(100);
+        list1.add(200);
+        list1.add(300);
+        System.out.println("First List is: "+ list);
+        System.out.println("Second List is: "+ list1);
 
+        //add the two list
+        // addAll(collection) at the end
+        // addAll(index,collection)
+        list.addAll(4, list1);
+        System.out.println("First List afterS addAll: "+ list);
 
-
+        if(list.contains(100)){
+            System.out.println("List contains 100");
+        }
 
     }
 }
