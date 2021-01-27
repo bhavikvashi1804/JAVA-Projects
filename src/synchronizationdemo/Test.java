@@ -2,7 +2,7 @@ package synchronizationdemo;
 
 class Table{
     //method not synchronized
-    void printTable(int n) {
+     synchronized void printTable(int n) {
         for(int i=1;i<=10;i++){
             System.out.println(n*i);
             try{
