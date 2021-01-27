@@ -1,4 +1,4 @@
-package java8Features;
+package java8Features.lambdasbasics;
 
 public class Test {
     public static void main(String[] args) {

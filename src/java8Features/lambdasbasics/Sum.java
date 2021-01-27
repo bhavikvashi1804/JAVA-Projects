@@ -1,4 +1,4 @@
-package java8Features;
+package java8Features.lambdasbasics;
 
 @FunctionalInterface
 public interface Sum {
@@ -9,7 +9,12 @@ public interface Sum {
 
 class Program{
     public static void main(String[] args) {
-        Sum s = (x,y)-> System.out.println(x+y);
+        Sum s = (x,y) -> {
+            System.out.println(x+y);
+            System.out.println(x*y);
+        };
+
+
         s.add(5,10);
     }
 }

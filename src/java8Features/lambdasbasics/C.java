@@ -1,4 +1,4 @@
-package java8Features;
+package java8Features.lambdasbasics;
 
 public class C implements A{
     @Override
