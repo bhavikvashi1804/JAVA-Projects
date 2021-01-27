@@ -4,7 +4,7 @@ public class CalExeTime{
     public static void main(String[] args) {
 
         long startTimeInMills = System.currentTimeMillis();
-        MyThread t1 = new MyThread();
+        MyThread3 t1 = new MyThread3();
         t1.start();
         try {
             t1.join();
