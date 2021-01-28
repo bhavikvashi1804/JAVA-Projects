@@ -8,7 +8,13 @@ public class NewAPIDemo {
 
         //softwareExpiry();
         //gameTimeInDiffZones();
-        calAge();
+        //calAge();
+
+        findTimeInterval();
+
+        // Partial Classes
+        System.out.println("Christmas: " + MonthDay.of(Month.DECEMBER, 25));
+        System.out.println("Credit card expiry date: " + YearMonth.of(2017, Month.JULY));
 
     }
 
@@ -69,6 +75,11 @@ public class NewAPIDemo {
 
     //interval time: interval btw two time
     public  static  void findTimeInterval(){
+
+        Instant startTime = Instant.now();
+        Instant endTime = Instant.now().minusSeconds(10);
+        Duration timeElapsed =	 Duration.between(startTime, endTime);
+        System.out.println("timeElapsed in ms: " + timeElapsed.toMillis());
 
     }
 }
