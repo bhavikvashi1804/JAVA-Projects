@@ -1,12 +1,13 @@
 package java8Features.dateandtime;
 
-import java.time.LocalDate;
+import java.time.*;
 import java.time.temporal.ChronoField;
 
 public class NewAPIDemo {
     public static void main(String[] args) {
 
-        softwareExpiry();
+        //softwareExpiry();
+        gameTimeInDiffZones();
 
     }
 
@@ -32,7 +33,26 @@ public class NewAPIDemo {
 
     //tv cricket time in different Time zone
     public static void gameTimeInDiffZones(){
+        //LocalTime
+        LocalTime time = LocalTime.of(9, 00, 00);
+        System.out.println("\ntime -- hr: " + time.getHour());
 
+        // LocalDate
+        LocalDate gameStartDate = LocalDate.of(2017, Month.JULY, 03);
+
+        // LocalDateTime
+        LocalDateTime gameStartTime = LocalDateTime.of(gameStartDate, time);
+        System.out.println("gameStartTime: " + gameStartTime);
+
+        // TimeZone ==> ZoneId
+        ZonedDateTime zonedGameStartTime = ZonedDateTime.of(gameStartTime, ZoneId.of("Europe/London"));
+        System.out.println("zonedGameStartTime: " + zonedGameStartTime);
+
+        ZonedDateTime indiaTime = zonedGameStartTime.withZoneSameInstant(ZoneId.of("Asia/Kolkata"));
+        System.out.println("indiaTime: " + indiaTime);
+
+        ZonedDateTime pst = zonedGameStartTime.withZoneSameInstant(ZoneId.of("America/Los_Angeles"));
+        System.out.println("pst: " + pst);
     }
 
 
