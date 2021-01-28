@@ -7,7 +7,8 @@ public class NewAPIDemo {
     public static void main(String[] args) {
 
         //softwareExpiry();
-        gameTimeInDiffZones();
+        //gameTimeInDiffZones();
+        calAge();
 
     }
 
@@ -58,6 +59,11 @@ public class NewAPIDemo {
 
     //age calculation: btw two date
     public static  void calAge(){
+        LocalDate birthDay = LocalDate.of(1998, Month.FEBRUARY, 18);
+        LocalDate today = LocalDate.now(); // current date from system clock
+        Period period = birthDay.until(today);
+        System.out.println("\nComplete Age: " + period.toString());
+        System.out.println("Age: " + period.getYears());
 
     }
 
