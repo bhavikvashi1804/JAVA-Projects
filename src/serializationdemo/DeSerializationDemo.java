@@ -1,6 +1,7 @@
 package serializationdemo;
 
-import java.io.*;
+import java.io.FileInputStream;
+import java.io.ObjectInputStream;
 
 public class DeSerializationDemo {
     public static void main(String[] args) {

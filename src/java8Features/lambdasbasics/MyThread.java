@@ -1,7 +1,5 @@
 package java8Features.lambdasbasics;
 
-import java.io.IOException;
-
 public class MyThread implements Runnable {
 
     @Override

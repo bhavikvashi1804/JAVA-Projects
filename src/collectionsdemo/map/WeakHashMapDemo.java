@@ -1,7 +1,7 @@
 package collectionsdemo.map;
 
-import java.util.WeakHashMap;
 import java.util.Map;
+import java.util.WeakHashMap;
 
 public class WeakHashMapDemo {
 

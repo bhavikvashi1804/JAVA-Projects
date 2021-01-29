@@ -1,7 +1,6 @@
 package iooperations;
 
 import java.io.FileWriter;
-import java.nio.charset.StandardCharsets;
 
 public class FileWriterDemo {
     public static void main(String[] args) {

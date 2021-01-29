@@ -1,7 +1,5 @@
 package concepts;
 
-import java.net.ServerSocket;
-
 public class EnumDemo {
     public static void main(String[] args) {
 

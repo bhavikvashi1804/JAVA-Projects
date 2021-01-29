@@ -3,7 +3,6 @@ package collectionsdemo.iterators;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.ListIterator;
-import java.util.TreeSet;
 
 public class ListIteratorDemo {
     public static void main(String[] args) {
